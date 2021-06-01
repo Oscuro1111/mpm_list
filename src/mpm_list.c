@@ -171,5 +171,3 @@ while ((node = mpm_list_next(NULL, &_state)) != NULL)
 
    return NULL;
 }
-
-
