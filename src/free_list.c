@@ -5,12 +5,12 @@
 void free_list(List *list, void (*free_ele)(void *)) {
 
   Node *node;
-  void *_state;
+  void *_state=NULL;
 
-  if (list == NULL || list->head == NULL)
+  if (list == NULL)
     return;
 
-  node = mpm_list_next(list, &_state);
+node = mpm_list_next(list, &_state);
 
 free_element:
   if (node != NULL && node->element != NULL) {
