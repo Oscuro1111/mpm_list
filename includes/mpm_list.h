@@ -20,6 +20,9 @@ typedef struct mpm_list {
   if (exp == NULL)                                                             \
   return -1
 
+
+List *allocate_list();
+
 // Operations on state of list
 int mpm_list_add(List *, void *ele);
 
